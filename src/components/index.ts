@@ -3,6 +3,8 @@ import IconFont from './IconFont/index.vue';
 import DeleteButton from './DeleteButton/index.vue';
 //导入element 图标
 import * as ElIconModules from '@element-plus/icons-vue';
+import Tui from './Tui';
+
 
 // import BasisTable from './BasisTable/index.vue';
 export default (app: App) => {
@@ -16,4 +18,5 @@ export default (app: App) => {
   app.component('IconFont', IconFont);
   app.component('DeleteButton', DeleteButton);
   // app.component('BasisTable', BasisTable);
+  app.use(Tui);
 };

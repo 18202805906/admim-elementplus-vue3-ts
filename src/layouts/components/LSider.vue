@@ -1,7 +1,7 @@
 <template>
-  <el-aside :width="collapse ? siderCloseWidth : siderOpenWidth">
+    <el-aside :width="collapse ? siderCloseWidth : siderOpenWidth" style="transition: width .75s;">
     <div class="x-sider">
-      <el-menu class="menu-box" unique-opened :collapse="collapse" :default-active="selectedKeys" :default-openeds="localOpeneds" :collapse-transition="true">
+      <el-menu class="menu-box" unique-opened :collapse="collapse" :default-active="selectedKeys" :default-openeds="localOpeneds">
         <template v-for="item in menus">
           <template v-if="!item.hide">
             <el-sub-menu :key="item.id" :index="item.url" v-if="item.children && item.children.length >= 1">

@@ -1,15 +1,16 @@
 <template>
   <div class="page-wrap">
     <el-card>
-      <h3>首页</h3>
+      <description-demo></description-demo>
     </el-card>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import DescriptionDemo from '@/views/demo/descriptionDemo.vue';
+
 export default defineComponent({
-  setup() {
-    
-  }
+  components: { DescriptionDemo },
+  setup() {}
 });
 </script>
