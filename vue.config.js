@@ -3,9 +3,9 @@ const mockServer = require('@bwrong/mock');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 // 按需引入element plus
-const AutoImport = require('unplugin-auto-import/webpack');
-const Components = require('unplugin-vue-components/webpack');
-const { ElementPlusResolver } = require('unplugin-vue-components/resolvers');
+// const AutoImport = require('unplugin-auto-import/webpack');
+// const Components = require('unplugin-vue-components/webpack');
+// const { ElementPlusResolver } = require('unplugin-vue-components/resolvers');
 // const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin');
 const pkg = require('./package');
 const { VUE_APP_API_HOST, VUE_APP_API_TITLE, VUE_APP_API_PREFIX } = process.env;
@@ -67,16 +67,16 @@ module.exports = {
     //   // dayjs替换moment
     //   new AntdDayjsWebpackPlugin({ preset: 'antdv3' })
     // );
-    config.plugins.push(
-      AutoImport({
-        resolvers: [ElementPlusResolver()],
-      }),
-    );
-    config.plugins.push(
-      Components({
-        resolvers: [ElementPlusResolver()],
-      }),
-    );
+    // config.plugins.push(
+    //   AutoImport({
+    //     resolvers: [ElementPlusResolver()],
+    //   }),
+    // );
+    // config.plugins.push(
+    //   Components({
+    //     resolvers: [ElementPlusResolver()],
+    //   }),
+    // );
     if (IS_PRODUCTION) {
       config.plugins.push(
         // gzip

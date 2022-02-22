@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import '@/assets/styles/common.less';
+import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 import App from './App.vue';
 import router from './router';
@@ -9,6 +10,7 @@ import directives from '@/directives';
 import components from '@/components';
 import config from '@/config';
 const app = createApp(App);
+app.use(ElementPlus);
 app.use(router);
 app.use(store);
 app.use(plugins); // 注册插件

@@ -12,7 +12,7 @@ export default (promiseFn: (runParams?: any) => Promise<any>, options: _IOptions
     error: null
   });
   const run = (runParams?: any) => {
-    state.loading = true;
+    state.loading = true; 
     return promiseFn(runParams)
       .then((res) => {
         state.data = res;

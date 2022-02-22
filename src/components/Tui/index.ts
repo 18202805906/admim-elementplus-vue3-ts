@@ -1,6 +1,6 @@
 
 // import TUploadFile from './uploadFile';
-// import TQueryCondition from './queryCondition';
+import TQueryCondition from './queryCondition';
 // import TSimpleForm from './simpleForm';
 // import TCalendar from './calendar';
 import TDescription from './description/index';
@@ -9,7 +9,7 @@ import { App } from 'vue';
 // 存储组件列表
 const components = [
   // TUploadFile,
-  // TQueryCondition,
+  TQueryCondition,
   // TSimpleForm,
   // TCalendar,
   TDescription,
@@ -26,7 +26,7 @@ const install = function (Vue: App) {
 export {
   install,
   // TUploadFile,
-  // TQueryCondition,
+  TQueryCondition,
   // TSimpleForm,
   // TCalendar,
   TDescription,
